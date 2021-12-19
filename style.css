@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root {
+    --v-dark-blue: hsl(233, 47%, 7%);
+    --desat-blue: hsl(244, 38%, 16%);
+    --soft-violet: hsl(277, 64%, 61%);
+    --white: hsl(0, 0%, 100%);
+    --main-p-white: hsla(0, 0%, 100%, 0.75);
+    --stat-h-white: hsla(0, 0%, 100%, 0.6);
+}
+
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    background-color: var(--v-dark-blue);
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    height: 446px;
+    width: 1110px;
+    border-radius: 9px;
+    display: flex;
+    background-color: var(--desat-blue);
+}
+
+section .mainpic {
+    min-height: 446px;
+    min-width: 540px;
+    background: url(images/image-header-desktop.jpg) no-repeat center right / cover;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+    opacity: 0.8;
+}
+
+section .overlay {
+    height: 100%;
+    width: 100%;
+    background: #a743d6;
+    mix-blend-mode: multiply;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+section .container .box {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 70%;
+    justify-content: space-between;
+}
+
+section .container .box .main h1 {
+    font-size: 36px;
+    color: var(--white);
+    margin: 0;
+}
+
+section .container .box .main h1 span {
+    color: var(--soft-violet);
+}
+
+section .container .box .main p {
+    margin-top: 26px;
+    color: var(--stat-h-white);
+    line-height: 1.7;
+    padding-right: 50px;
+}
+
+section .container .box .stats {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+section .container .box .stats .stat {
+    display: flex;
+    flex-direction: column;
+    padding-right: 64px;
+
+}
+
+section .container .box .stats h2 {
+    margin: 0 0 8px;
+    font-size: 20px;
+    color: var(--white);
+    font-size: 22px;
+}
+
+section .container .box .stats p {
+    margin: 0;
+    font-family: 'Lexend Deca', sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: var(--stat-h-white);
+}
+
+
+.attribution {
+    position: absolute;
+    bottom: 5px;
+    font-size: 7.5px;
+    text-align: center;
+    color: hsl(228, 45%, 44%);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ---------------Media Query---------------- */
+@media (max-width: 476px) {
+    section {
+        height: 600px;
+        width: 302px;
+        flex-direction: column-reverse;
+        position: absolute;
+        justify-content: flex-end;
+    }
+
+    section .mainpic {
+        min-height: 30%;
+        min-width: 100%;
+        position: absolute;
+        top: 0;
+        background-image: url(images/image-header-mobile.jpg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        border-top-left-radius: 9px;
+        border-bottom-right-radius: 0;
+    }
+    
+    section .overlay {
+        position: absolute;
+        top: 0;
+        border-top-left-radius: 9px;
+        border-bottom-right-radius: 0;
+    }
+
+    section .container {
+        margin-top: 180px;
+    }
+    
+    section .container .box {
+        width: 80%;
+        height: 100%;
+    }
+    
+    section .container .box .main h1 {
+        text-align: center;
+        font-size: 24px;
+        margin-top: 36px;
+    }
+  
+    section .container .box .main p {
+        margin-top: 20px;
+        padding: 0px;
+        text-align: center;
+        font-size: 14px;
+    }
+    
+    section .container .box .stats {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    
+    section .container .box .stats .stat {
+        padding: 0;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+    
+    section .container .box .stats h2 {
+        margin: 0 0 2px;
+    }
+    
+    section .container .box .stats p {
+        font-size: 9px;
+    }
+    
+    
+    .attribution {
+        bottom: 3px;
+        font-size: 6.5px;
+    }
+}
