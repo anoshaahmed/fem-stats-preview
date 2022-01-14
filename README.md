@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [FrontEnd Mentor: My Solution](https://www.frontendmentor.io/solutions/stats-preview-card-using-css-flexbox-DGP7xGCLI)
-- Live Site URL: [GitHub Page: Stats Preview Card](https://anoshaahmed.github.io/fem02-stats-preview/)
+- Live Site URL: [GitHub Page: Stats Preview Card](https://anoshaahmed.github.io/fem03-stats-preview/)
 
 ## My process
 
