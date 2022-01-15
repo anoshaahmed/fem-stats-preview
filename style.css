@@ -35,10 +35,9 @@ section {
 section .mainpic {
     min-height: 446px;
     min-width: 540px;
-    background: url(images/image-header-desktop.jpg) no-repeat center right / cover;
     border-top-right-radius: 9px;
     border-bottom-right-radius: 9px;
-    opacity: 0.8;
+    background-color: hsl(277, 64%, 61%);
 }
 
 section .overlay {
@@ -48,6 +47,8 @@ section .overlay {
     mix-blend-mode: multiply;
     border-top-right-radius: 9px;
     border-bottom-right-radius: 9px;
+    opacity: 0.75;
+    background: url(images/image-header-desktop.jpg) no-repeat center right / cover;
 }
 
 section .container {
